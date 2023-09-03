@@ -23,7 +23,7 @@ def start_calc_game():
             show_success_screen(user_name, count_wins >= 3)
         else:
             show_lose_screen(user_name, user_answer, correct_answer)
-            return
+            break
 
 
 def get_question_and_correct_answer() -> tuple[str, int]:

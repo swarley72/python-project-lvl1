@@ -14,7 +14,7 @@ def start_gcd_game():
     count_wins = 0
 
     while count_wins < 3:
-        question, correct_answer = get_question_and_gdc()
+        question, correct_answer = get_question_and_gcd()
         print_question(question)
         user_answer = get_user_answer()
 
@@ -23,12 +23,12 @@ def start_gcd_game():
             show_success_screen(user_name, count_wins >= 3)
         else:
             show_lose_screen(user_name, user_answer, correct_answer)
-            return
+            break
 
 
-def get_question_and_gdc() -> tuple[str, int]:
-    first_number = get_random_int(10)
-    second_number = get_random_int(10)
+def get_question_and_gcd() -> tuple[str, int]:
+    first_number = get_random_int(10, 1)
+    second_number = get_random_int(10, 1)
     return f"{first_number} {second_number}", str(get_gcd(first_number, second_number))
 
 

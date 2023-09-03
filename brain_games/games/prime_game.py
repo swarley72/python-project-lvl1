@@ -23,7 +23,7 @@ def start_prime_game():
             show_success_screen(user_name, count_wins >= 3)
         else:
             show_lose_screen(user_name, user_answer, correct_answer)
-            return
+            break
 
 
 def check_is_prime(number) -> bool:

@@ -9,8 +9,8 @@ def get_user_name_and_greet() -> str:
     return user_name
 
 
-def get_random_int(max_int: int):
-    return random.randint(0, max_int)
+def get_random_int(max_int: int, min_int=0):
+    return random.randint(min_int, max_int)
 
 
 def print_message(message: str):

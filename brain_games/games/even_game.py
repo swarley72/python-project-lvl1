@@ -26,7 +26,7 @@ def start_even_game():
             show_success_screen(name, count_wins >= 3)
         else:
             show_lose_screen(name, answer, 'yes' if answer == 'no' else 'no')
-            return
+            break
 
 
 def check_is_even(number):
