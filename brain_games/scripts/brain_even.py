@@ -1,8 +1,7 @@
-from brain_games.even_game import start_even_game
+from brain_games.games.even_game import start_even_game
 
 
 def main():
-    print("Welcome to the Brain Games!")
     start_even_game()
 
 
