@@ -29,8 +29,12 @@ def get_user_input(message: str) -> str:
     return prompt.string(message)
 
 
-def show_lose_screen(user_name: str, user_answer: str, correct_answer: str | int):
-    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+def show_lose_screen(user_name: str, user_answer: str,
+                     correct_answer: str | int):
+    print(
+        f"'{user_answer}' is wrong answer "
+        f";(. Correct answer was '{correct_answer}'."
+    )
     print(f"Let's try again, {user_name}!")
 
 

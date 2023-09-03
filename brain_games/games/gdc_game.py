@@ -29,7 +29,10 @@ def start_gcd_game():
 def get_question_and_gcd() -> tuple[str, int]:
     first_number = get_random_int(10, 1)
     second_number = get_random_int(10, 1)
-    return f"{first_number} {second_number}", str(get_gcd(first_number, second_number))
+    return (
+        f"{first_number} {second_number}",
+        str(get_gcd(first_number, second_number))
+    )
 
 
 def get_gcd(first: int, second: int) -> int:
