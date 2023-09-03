@@ -10,6 +10,9 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
+brain-gdc:
+	poetry run brain-gdc
+
 build:
 	poetry build
 
