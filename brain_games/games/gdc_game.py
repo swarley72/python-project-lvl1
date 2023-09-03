@@ -8,7 +8,7 @@ from brain_games.games.utils import (
 )
 
 
-def start_gdc_game():
+def start_gcd_game():
     user_name = get_user_name_and_greet()
     print("Find the greatest common divisor of given numbers.")
     count_wins = 0
@@ -29,10 +29,10 @@ def start_gdc_game():
 def get_question_and_gdc() -> tuple[str, int]:
     first_number = get_random_int(10)
     second_number = get_random_int(10)
-    return f"{first_number} {second_number}", str(get_gdc(first_number, second_number))
+    return f"{first_number} {second_number}", str(get_gcd(first_number, second_number))
 
 
-def get_gdc(first: int, second: int) -> int:
+def get_gcd(first: int, second: int) -> int:
     result = min(first, second)
 
     while result:
