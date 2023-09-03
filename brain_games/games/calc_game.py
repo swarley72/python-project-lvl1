@@ -11,6 +11,7 @@ import random
 
 def start_calc_game():
     user_name = get_user_name_and_greet()
+    print("What is the result of the expression?")
     count_wins = 0
 
     while count_wins < 3:
